@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "honoka";
+
+
+body {
+  overflow: visible !important;
+  background: -webkit-linear-gradient(100deg, rebeccapurple 10%, #3d8b40 90%);
+  background: -moz-linear-gradient(100deg, rebeccapurple 10%, #3d8b40 90%);
+  background: -ms-linear-gradient(100deg, rebeccapurple 10%, #3d8b40 90%);
+  background: -o-linear-gradient(100deg, rebeccapurple 10%, #3d8b40 90%);
+  background: linear-gradient(100deg, rebeccapurple 10%, #3d8b40 90%);
+}
+
+body {
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
